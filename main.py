@@ -12,13 +12,17 @@ class Benchmark(mglw.WindowConfig):
                                          fragment_shader='programs/fragment.glsl')
         self.set_uniform('u_resolution', self.window_size)
 
-        self.texture1 = self.load_texture_2d('textures/fur.jpg')
+        self.texture1 = self.load_texture_2d('textures/joker.jpg')
         self.set_uniform('u_texture1', 1)
         self.texture1.use(location=1)
 
         self.texture2 = self.load_texture_2d('textures/noise.png')
         self.set_uniform('u_texture2', 2)
         self.texture2.use(location=2)
+
+        self.texture3 = self.load_texture_2d('textures/floppa cube.jpg')
+        self.set_uniform('u_texture3', 3)
+        self.texture3.use(location=3)
 
     def set_uniform(self, u_name, u_value):
         try:
