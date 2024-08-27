@@ -16,6 +16,10 @@ class Benchmark(mglw.WindowConfig):
         self.set_uniform('u_texture1', 1)
         self.texture1.use(location=1)
 
+        self.texture2 = self.load_texture_2d('textures/noise.png')
+        self.set_uniform('u_texture2', 2)
+        self.texture2.use(location=2)
+
     def set_uniform(self, u_name, u_value):
         try:
             self.program[u_name] = u_value
