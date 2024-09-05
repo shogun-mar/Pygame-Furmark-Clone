@@ -1,11 +1,15 @@
 # Pygame Furmark Clone
 Clone of the benchmarking tool Furmark made with Pygame and ModernGL.
 
-## Install 
+## Installation
 
+Run this command:
 ```
-pip install moderngl-window
+pip install -r requirements.txt
 ```
+while in the directory folder.
+
+NOTE: Python 3+ required.
 
 ## Usage
 
